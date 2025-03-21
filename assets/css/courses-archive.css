@@ -1,0 +1,102 @@
+/* Banner de cursos */
+.courses-archive-banner {
+    background-color: var(--darker-bg);
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.courses-archive-banner .container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+}
+
+.banner-content {
+    width: 60%;
+}
+
+.archive-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+}
+
+.archive-description {
+    font-size: 1.2rem;
+    color: var(--text-gray);
+    max-width: 80%;
+}
+
+.banner-image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 40%;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+/* Contenedor principal */
+.courses-archive-container {
+    padding: 50px 0;
+    background-color: var(--dark-bg);
+}
+
+/* Filtros */
+.courses-filters {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.courses-search {
+    margin-bottom: 20px;
+}
+
+.courses-search .search-form {
+    display: flex;
+}
+
+.courses-search .search-field {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px 0 0 4px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--text-light);
+    font-size: 1rem;
+}
+
+.courses-search .search-submit {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+.courses-filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filter-group label {
+    font-size: 0.9rem;
+    color: var(--text-gray);
+}
+

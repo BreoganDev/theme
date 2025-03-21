@@ -1,0 +1,127 @@
+breogan-theme/
+├── inc/
+│   ├── course-post-type.php
+│   ├── custom-styles.php
+│   ├── customizer-home.php
+│   ├── customizer-main.php
+│   ├── customizer.php
+│   ├── footer-customizer.php
+│   ├── icons-customizer.php
+│   ├── layout-customizer.php
+│   ├── meta-boxes.php
+│   ├── mobile-menu-customizer.php
+│   ├── parallax-integration.php
+│   ├── typography-customizer.php
+├── template-parts/
+│   ├── hero.php
+├── assets/
+│   ├── css/
+│   │   ├── courses-archive.css
+│   │   ├── parallax.css
+│   ├── js/
+│   │   ├── breogan.js
+├── functions.php
+├── header.php
+├── footer.php
+├── index.php
+├── archive-curso.php
+├── archive-instructor.php
+├── single-curso.php
+├── single-instructor.php
+├── home.php
+├── page.php
+├── style.css
+
+1. Archivo Principal: functions.php
+Descripción : Este es el archivo central del tema donde se registran funciones personalizadas, tipos de publicación personalizados, scripts, estilos y otras configuraciones.
+Funciones Principales :
+Registro de tipos de publicación personalizados (curso, instructor).
+Enqueue de scripts y estilos globales.
+Inclusión de archivos adicionales desde el directorio inc/.
+
+2. Directorio inc/
+Este directorio contiene archivos modulares que manejan funcionalidades específicas del tema. A continuación, se describe cada archivo:
+course-post-type.php :
+Descripción : Registra el tipo de publicación personalizado "curso".
+Uso : Define las propiedades y características de los cursos (por ejemplo, soporte para título, editor, miniatura, etc.).
+custom-styles.php :
+Descripción : Agrega estilos personalizados dinámicos al tema.
+Uso : Puede generar estilos basados en opciones del Customizer o configuraciones del usuario.
+customizer.php :
+Descripción : Actúa como el núcleo del sistema de personalización del tema.
+Uso : Incluye otros archivos de personalización y registra secciones generales del Customizer.
+customizer-home.php :
+Descripción : Maneja opciones específicas para la página de inicio.
+Uso : Define controles para personalizar elementos como la sección "hero", sliders, etc.
+customizer-main.php :
+Descripción : Maneja opciones globales que afectan todo el sitio.
+Uso : Configuraciones como colores, tipografía y diseño general.
+footer-customizer.php :
+Descripción : Personaliza el pie de página.
+Uso : Opciones para texto de derechos de autor, enlaces sociales, etc.
+icons-customizer.php :
+Descripción : Maneja opciones relacionadas con íconos.
+Uso : Permite seleccionar fuentes de íconos (Font Awesome, Material Icons) y configurar iconos específicos.
+layout-customizer.php :
+Descripción : Controla opciones de diseño global.
+Uso : Configuraciones como ancho del contenido, diseño de columnas, etc.
+meta-boxes.php :
+Descripción : Agrega campos personalizados (meta boxes) a los editores de posts y páginas.
+Uso : Campos adicionales para datos específicos, como precios, duración de cursos, etc.
+mobile-menu-customizer.php :
+Descripción : Personaliza el menú móvil.
+Uso : Opciones para estilo, comportamiento y diseño del menú en dispositivos móviles.
+parallax-integration.php :
+Descripción : Integra efectos de paralaje en el tema.
+Uso : Configuraciones para activar/desactivar efectos de paralaje en secciones específicas.
+typography-customizer.php :
+Descripción : Personaliza la tipografía del sitio.
+Uso : Opciones para fuente principal, tamaño de letra, interlineado, etc.
+
+3. Directorio template-parts/
+Este directorio contiene fragmentos reutilizables de plantillas HTML.
+hero.php :
+Descripción : Muestra la sección "hero" (sección destacada) en varias páginas.
+Uso : Se incluye en archivos como home.php o archive-curso.php para mostrar contenido destacado.
+
+4. Directorio assets/
+Este directorio contiene recursos estáticos como CSS y JavaScript.
+css/ :
+courses-archive.css : Estilos específicos para la página de archivo de cursos.
+parallax.css : Estilos para efectos de paralaje.
+js/ :
+breogan.js : Scripts personalizados para funcionalidades dinámicas del tema.
+
+5. Archivos de Plantilla
+Estos archivos controlan cómo se muestran diferentes partes del sitio.
+header.php :
+Descripción : Contiene el código HTML para la cabecera del sitio.
+Uso : Incluye elementos como el logo, menú principal y metadatos.
+footer.php :
+Descripción : Contiene el código HTML para el pie de página.
+Uso : Incluye enlaces, widgets y scripts adicionales.
+index.php :
+Descripción : Controla la página principal del sitio.
+Uso : Muestra los posts más recientes o una página estática según la configuración.
+archive-curso.php :
+Descripción : Controla cómo se muestran los cursos archivados.
+Uso : Muestra una lista de todos los cursos disponibles.
+archive-instructor.php :
+Descripción : Controla cómo se muestran los instructores archivados.
+Uso : Similar a archive-curso.php, pero para instructores.
+single-curso.php :
+Descripción : Controla cómo se muestra un solo curso.
+Uso : Muestra detalles completos de un curso específico.
+single-instructor.php :
+Descripción : Controla cómo se muestra un solo instructor.
+Uso : Muestra detalles completos de un instructor específico.
+home.php :
+Descripción : Controla la página de inicio.
+Uso : Muestra contenido personalizado para la página principal.
+page.php :
+Descripción : Controla cómo se muestran las páginas estáticas.
+Uso : Muestra el contenido de cualquier página estática.
+
+6. Archivo style.css
+Descripción : Es el archivo CSS principal del tema.
+Uso : Define los estilos globales del sitio, como tipografía, colores, márgenes, etc.
